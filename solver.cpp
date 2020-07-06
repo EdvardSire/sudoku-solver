@@ -3,7 +3,8 @@ using namespace std;
 
 // Row are horizontal
 // Columns are vertical
-int grid[9][9] = {
+int grid[9][9] = 
+{
 { 0, 0, 0, 0, 0, 0, 0, 0, 0 }, 
 { 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 { 0, 0, 0, 0, 0, 0, 0, 0, 0 },
