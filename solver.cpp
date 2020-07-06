@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std;
 
-// row are horizontal
-// columns are vertical
+// Row are horizontal
+// Columns are vertical
 int grid[9][9] = {
 { 0, 0, 0, 0, 0, 0, 0, 0, 0 }, 
 { 0, 0, 0, 0, 0, 0, 0, 0, 0 },
