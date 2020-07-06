@@ -33,7 +33,7 @@ void drawGrid() {
 }
 
 // Returns bool based on if 'test' is in 'row'
-// Returns 0 if value is not in row(horiozontal segment), returns 1 if value is in row
+// Returns 0 if value is not in row (horiozontal segment), returns 1 if value is in row
 bool isInRow(int row, int test) {
     for(int i = 0; i < 9; i++) {
         if(grid[row][i] == test) {
@@ -44,7 +44,7 @@ bool isInRow(int row, int test) {
 }
 
 // Returns bool based on if 'test' is in 'col'
-// Returns 0 if value is not in col(vertical segment), returns 1 if value is in col
+// Returns 0 if value is not in col (vertical segment), returns 1 if value is in col
 bool isInCol(int col, int test) {
     for(int i = 0; i < 9; i++) {
         if(grid[i][col] == test) {
@@ -55,7 +55,7 @@ bool isInCol(int col, int test) {
 }
 
 // Returns bool bases on if 'test' is in the box based on intput row and col
-// Returns 0 if value is not in box(3x3 square segment), returns 1 if value is in box
+// Returns 0 if value is not in box (3x3 square segment), returns 1 if value is in box
 bool isInBox(int row, int col, int test) {
     int boxRow = row-row%3;
     int boxCol = col-col%3;
@@ -92,7 +92,7 @@ bool solve() {
             break;
     }
 
-    // If no zero was found return true, else try nums from 1-9
+    // If no zero was found return true, else try nums from 1-9 and call solve()
     if(!gotValue) {
         return true;
     } else {
